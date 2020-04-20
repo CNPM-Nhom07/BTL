@@ -1,0 +1,96 @@
+D:\VS Project\FordBell\FordBell\bin\Debug\FordBell.exe
+D:\VS Project\FordBell\FordBell\bin\Debug\FordBell.pdb
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.Form1.resources
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.exe
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.pdb
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+D:\VS Project\FordBell\FordBell\obj\x86\Debug\FordBell.About.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.exe
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.exe
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.pdb
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+C:\Users\NguyeNSang\Desktop\demo\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.Cache
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.exe
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.pdb
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.exe
+C:\Users\PC\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.exe.config
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.exe
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\bin\Debug\FordBell.pdb
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.exe
+C:\Users\Admin\Downloads\Laptrinh123.com_giai thuat Ford Bellman\giải thuật Ford Bellman\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe.config
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.pdb
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.CoreCompileInputs.cache
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.exe
+E:\programming c++\C#\Tài Liệu\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe.config
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.pdb
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.CoreCompileInputs.cache
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.exe
+E:\Document_Program\C#\Ford Bellman - 18PM\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe.config
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.pdb
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.suamatran.resources
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.CoreCompileInputs.cache
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.exe
+E:\Môn Học\Công Nghệ phần mềm\Bài tập lớn\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe.config
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.exe
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\bin\Debug\FordBell.pdb
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.csproj.CoreCompileInputs.cache
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.exe
+F:\Môn Học\Công Nghệ phần mềm\Algorithlm 3 for\Source code\FordBell\obj\x86\Debug\FordBell.pdb
