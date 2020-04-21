@@ -148,7 +148,12 @@
             this.lưuẢnhToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.lưuẢnhToolStripMenuItem.Text = "Lưu Ảnh Đồ Thị";
             this.lưuẢnhToolStripMenuItem.Click += new System.EventHandler(this.lưuẢnhToolStripMenuItem_Click);
-            //
+            // 
+            // sửaDữLiệuToolStripMenuItem
+            // 
+            this.sửaDữLiệuToolStripMenuItem.Name = "sửaDữLiệuToolStripMenuItem";
+            this.sửaDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            // 
             // cậpNhậtToolStripMenuItem
             // 
             this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
@@ -161,7 +166,7 @@
             this.thôngTinTácGiảToolStripMenuItem.Name = "thôngTinTácGiảToolStripMenuItem";
             this.thôngTinTácGiảToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.thôngTinTácGiảToolStripMenuItem.Text = "Thông tin tác giả";
-            this.thôngTinTácGiảToolStripMenuItem.Click += new System.EventHandler(this.thôngTinTácGiảToolStripMenuItem_Click);
+            this.thôngTinTácGiảToolStripMenuItem.Click += new System.EventHandler(this.BackHome_ToolStripMenuItem_Click);
             // 
             // lienthong
             // 
@@ -245,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 53);
+            this.ClientSize = new System.Drawing.Size(596, 364);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.ControlBox = false;
             this.Controls.Add(this.button5);
@@ -265,6 +270,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Demo Tìm đường đi ngắn nhất ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
