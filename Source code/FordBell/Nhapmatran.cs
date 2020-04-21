@@ -44,12 +44,12 @@ namespace FordBell
                         dd.Items.Add(i);
                         dc.Items.Add(i);
                     }
-                    dd.Enabled = dc.Enabled =button3.Enabled=button2.Enabled=button6.Enabled= true;
+                    dd.Enabled = dc.Enabled =button3.Enabled=button2.Enabled=button5.Enabled=button6.Enabled= true;
 
                 }
 
-
             }
+
 
             catch (System.Exception ex)
             {
@@ -78,6 +78,37 @@ namespace FordBell
             this.Close();
             
         }
+        void ToListView()
+        {
+            dt.Columns.Clear();
+            dt.Rows.Clear();
+            int wid = dt.Width / sdinh;
+            int hei = dt.Height / sdinh;
+            for (int i = 1; i <= sdinh; i++)
+            {
+                dt.Columns.Add(i.ToString(), i.ToString());
+                dt.Columns[i - 1].Width = wid;
+            }
+
+
+            for (int i = 0; i < sdinh; i++)
+            {
+                dt.Rows.Add();
+                dt.Rows[i].Height = hei;
+
+                for (int j = 0; j < sdinh; j++)
+                {
+                    if (mt[i, j] == 0 && i != j)
+                    {
+                        dt[j, i].Value = "∞";
+                    }
+                    else
+                        dt[j, i].Value = mt[i, j];
+                }
+            }
+
+        }
+
 
         private void Nhapmatran_Load(object sender, EventArgs e)
         {
@@ -113,6 +144,12 @@ namespace FordBell
                     }
                 }
             }
+            ToListView();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ToListView();
         }
     }
 }
