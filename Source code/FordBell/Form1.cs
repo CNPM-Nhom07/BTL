@@ -236,20 +236,12 @@ namespace FordBell
             ToListView();
         }
 
-       /* private void sửaDữLiệuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tam.matran = a.ToMaTrix;
-            tam.sodinh = a.SoDinh;
-            suamatran sua = new suamatran();
-            sua.ShowDialog();
-        }*/
-
         private void cậpNhậtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             button4_Click(sender, e);
         }
 
-        private void thôngTinTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BackHome_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            About a = new About();
             a.ShowDialog();
@@ -282,7 +274,6 @@ namespace FordBell
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
             Application.Exit();
         }
     }
