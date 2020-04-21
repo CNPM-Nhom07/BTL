@@ -17,6 +17,7 @@ namespace FordBell
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form1 a = new Form1();
             a.ShowDialog();
         }
