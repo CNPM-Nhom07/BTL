@@ -203,6 +203,7 @@ namespace ployd
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cb_GiaiThuat.Enabled = false;
             btl_CapNhat.Enabled = contextMenuStrip1.Enabled = false;
             btl_Truoc.Enabled = contextMenuStrip1.Enabled = false;
             btl_Sau.Enabled = contextMenuStrip1.Enabled = false;
@@ -213,9 +214,8 @@ namespace ployd
 
         public void button4_Click(object sender, EventArgs e)
         {
-            btl_OK.Enabled = contextMenuStrip1.Enabled = true;
             a = new FB(tam.sodinh, tam.matran);
-
+            cb_GiaiThuat.Enabled = true;
             start.Items.Clear();
             end.Items.Clear();
             for (int i = 1; i <= a.SoDinh; i++)
@@ -297,6 +297,14 @@ namespace ployd
             btl_Truoc.Enabled = contextMenuStrip1.Enabled = true;
             btl_Sau.Enabled = contextMenuStrip1.Enabled = true;
             btl_ToanBo.Enabled = contextMenuStrip1.Enabled = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Lấy giá trị qua thuộc tính SelectedItem
+            var item = this.cb_GiaiThuat.GetItemText(this.cb_GiaiThuat.SelectedItem);
+            if (item != "") btl_OK.Enabled = contextMenuStrip1.Enabled = true;
+           // MessageBox.Show(item);
         }
     }
 }

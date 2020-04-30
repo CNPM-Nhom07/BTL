@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btl_NhapFile = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.start = new System.Windows.Forms.ComboBox();
@@ -50,7 +50,7 @@
             this.tb = new System.Windows.Forms.Label();
             this.btl_CapNhat = new System.Windows.Forms.Button();
             this.btl_Thoat = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_GiaiThuat = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btl_Truoc = new System.Windows.Forms.Button();
             this.btl_Sau = new System.Windows.Forms.Button();
@@ -202,14 +202,14 @@
             this.dt.AllowUserToResizeRows = false;
             this.dt.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dt.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt.DefaultCellStyle = dataGridViewCellStyle2;
             this.dt.GridColor = System.Drawing.SystemColors.Control;
             this.dt.Location = new System.Drawing.Point(791, 188);
             this.dt.Name = "dt";
@@ -252,21 +252,22 @@
             this.btl_Thoat.UseVisualStyleBackColor = true;
             this.btl_Thoat.Click += new System.EventHandler(this.button5_Click);
             // 
-            // comboBox1
+            // cb_GiaiThuat
             // 
-            this.comboBox1.DropDownHeight = 120;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 13;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb_GiaiThuat.DropDownHeight = 120;
+            this.cb_GiaiThuat.FormattingEnabled = true;
+            this.cb_GiaiThuat.IntegralHeight = false;
+            this.cb_GiaiThuat.ItemHeight = 13;
+            this.cb_GiaiThuat.Items.AddRange(new object[] {
             "Dijkstra",
             "Bellman-Ford",
             "Floyd-Warshall",
             "A*"});
-            this.comboBox1.Location = new System.Drawing.Point(438, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
+            this.cb_GiaiThuat.Location = new System.Drawing.Point(438, 16);
+            this.cb_GiaiThuat.Name = "cb_GiaiThuat";
+            this.cb_GiaiThuat.Size = new System.Drawing.Size(121, 21);
+            this.cb_GiaiThuat.TabIndex = 19;
+            this.cb_GiaiThuat.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -320,7 +321,7 @@
             this.Controls.Add(this.btl_Sau);
             this.Controls.Add(this.btl_Truoc);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_GiaiThuat);
             this.Controls.Add(this.btl_Thoat);
             this.Controls.Add(this.tb);
             this.Controls.Add(this.lienthong);
@@ -372,7 +373,7 @@
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinTácGiảToolStripMenuItem;
         private System.Windows.Forms.Button btl_Thoat;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_GiaiThuat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btl_Truoc;
         private System.Windows.Forms.Button btl_Sau;
