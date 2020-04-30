@@ -98,11 +98,11 @@ F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\bin\Deb
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\bin\Debug\FordBell.exe
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\bin\Debug\FordBell.pdb
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.csprojAssemblyReference.cache
-F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.About.resources
-F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.Form1.resources
-F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.Nhapmatran.resources
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.Properties.Resources.resources
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.csproj.GenerateResource.cache
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.csproj.CoreCompileInputs.cache
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.exe
 F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\FordBell.pdb
+F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\ployd.About.resources
+F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\ployd.Form1.resources
+F:\Môn Học\Công Nghệ phần mềm\program\BTL\Source code\FordBell\obj\x86\Debug\ployd.Nhapmatran.resources

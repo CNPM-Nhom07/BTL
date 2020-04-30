@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FordBell.Properties {
+namespace ployd.Properties {
     using System;
     
     

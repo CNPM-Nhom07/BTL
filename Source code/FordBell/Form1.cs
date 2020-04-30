@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace FordBell
+namespace ployd
 {
     public  partial class Form1 : Form
     {
@@ -40,7 +40,7 @@ namespace FordBell
                         end.Items.Add(i);
                     }
                     end.Enabled = start.Enabled = true;
-                    button2.Enabled = true;
+                    btl_ToanBo.Enabled = true;
                     end.Text = a.SoDinh.ToString();
                     start.Text = "1";
 
@@ -56,7 +56,7 @@ namespace FordBell
                     tam.matran = a.ToMaTrix;
                     tam.sodinh = a.SoDinh;
                     this.Width = 953;
-                    button5.Location = new Point(854, 503);
+                    btl_Thoat.Location = new Point(854, 503);
                     this.Text = "Demo Tìm đường đi ngắn nhất bằng Ford Bellman";
                     ToListView();
                 }
@@ -78,7 +78,7 @@ namespace FordBell
             this.Height = 578;
            
 
-            button4.Enabled = contextMenuStrip1.Enabled = true;
+            btl_CapNhat.Enabled = contextMenuStrip1.Enabled = true;
           
                 
 
@@ -192,23 +192,28 @@ namespace FordBell
         private void button3_Click(object sender, EventArgs e)
         {
             this.Width = 953;
-            this.Text = "Demo Tìm đường đi ngắn nhất bằng Ford Bellman";
-            button5.Location = new Point(854, 503);
+            this.Text = "Demo Tìm đường đi ngắn nhất";
+            btl_Thoat.Location = new Point(854, 503);
             this.Height = 578;
             Nhapmatran a = new Nhapmatran();
-            button4.Enabled = contextMenuStrip1.Enabled = true;
+            btl_CapNhat.Enabled = contextMenuStrip1.Enabled = true;
             a.ShowDialog();
             
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button4.Enabled = contextMenuStrip1.Enabled = false;
-            
+            btl_CapNhat.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Truoc.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Sau.Enabled = contextMenuStrip1.Enabled = false;
+            btl_OK.Enabled = contextMenuStrip1.Enabled = false;
+
+
         }
 
         public void button4_Click(object sender, EventArgs e)
         {
+            btl_OK.Enabled = contextMenuStrip1.Enabled = true;
             a = new FB(tam.sodinh, tam.matran);
 
             start.Items.Clear();
@@ -219,19 +224,23 @@ namespace FordBell
                 end.Items.Add(i);
             }
             end.Enabled = start.Enabled = true;
-            button2.Enabled = true;
             end.Text = a.SoDinh.ToString();
             start.Text = "1";
 
 
             pb.Image = a.Paint();
-            if (a.DFS(1))
+            /* if (a.DFS(1))
+             {
+                 lienthong.Text = "Đồ thị Liên thông";
+
+             }
+             else
+                 lienthong.Text = "Đồ thị Không Liên thông";*/
+            if (!a.DFS(1))
             {
-                lienthong.Text = "Đồ thị Liên thông";
+                MessageBox.Show("Đồ thị Không Liên thông");
 
             }
-            else
-                lienthong.Text = "Đồ thị Không Liên thông";
             a.Paint();
             ToListView();
         }
@@ -274,7 +283,20 @@ namespace FordBell
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Application.Exit();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btl_OK_Click(object sender, EventArgs e)
+        {
+            btl_Truoc.Enabled = contextMenuStrip1.Enabled = true;
+            btl_Sau.Enabled = contextMenuStrip1.Enabled = true;
+            btl_ToanBo.Enabled = contextMenuStrip1.Enabled = true;
         }
     }
 }

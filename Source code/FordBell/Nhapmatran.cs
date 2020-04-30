@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-namespace FordBell
+namespace ployd
 {
     public partial class Nhapmatran : Form
     {
@@ -74,7 +74,6 @@ namespace FordBell
         {
             tam.matran = mt;
             tam.sodinh = sdinh;
-            
             this.Close();
             
         }

@@ -5,7 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Data;
 
-namespace FordBell
+namespace ployd
 {
     class FB
     {
@@ -15,7 +15,7 @@ namespace FordBell
 
         private int sodinh;
         private PointF[] dsve;
-        private int[,] matrantrongso;
+        private int[,] trongSo;
         private int[] Truoc;
         private int[] khoangcach;
         private int[] DuongDi;
@@ -29,7 +29,7 @@ namespace FordBell
             tam = tam.Trim();
             sodinh = int.Parse(tam);
             dsve = new PointF[sodinh];
-            matrantrongso = new int[sodinh, sodinh];
+            trongSo = new int[sodinh, sodinh];
             Truoc = new int[sodinh];
             khoangcach = new int[sodinh];
             DuongDi = new int[sodinh];
@@ -56,7 +56,7 @@ namespace FordBell
 
                 for (int l = 0; l < sodinh; l++)
                 {
-                    matrantrongso[i, l] = int.Parse(temp[l]);
+                    trongSo[i, l] = int.Parse(temp[l]);
 
                 }
             }
@@ -65,9 +65,9 @@ namespace FordBell
             {
                 for (int j = 0; j < sodinh; j++)
                 {
-                    if (matrantrongso[i, j] == 0)
+                    if (trongSo[i, j] == 0)
                     {
-                        matrantrongso[i, j] = vocung;
+                        trongSo[i, j] = vocung;
                     }
                 }
             }
@@ -76,7 +76,7 @@ namespace FordBell
         public FB(int sodinh, int[,] matran)
         {
             this.sodinh = sodinh;
-            this.matrantrongso = matran;
+            this.trongSo = matran;
             dsve = new PointF[sodinh];
             
             Truoc = new int[sodinh];
@@ -86,9 +86,9 @@ namespace FordBell
             {
                 for (int j = 0; j < sodinh; j++)
                 {
-                    if (matrantrongso[i, j] == 0)
+                    if (trongSo[i, j] == 0)
                     {
-                        matrantrongso[i, j] = vocung;
+                        trongSo[i, j] = vocung;
                     }
                 }
             }
@@ -127,7 +127,7 @@ namespace FordBell
                     danhdau[v] = 1;
                     for (int i = sodinh - 1; i >= 0; i--)
                     {
-                        if (danhdau[i] == 0 && matrantrongso[v, i] != vocung)
+                        if (danhdau[i] == 0 && trongSo[v, i] != vocung)
                         {
                             st.Push(i);
 
@@ -151,14 +151,14 @@ namespace FordBell
             {
                 for (int j = 1; j <= sodinh; j++)
                 {
-                    st += (matrantrongso[i, j]) + " ";
+                    st += (trongSo[i, j]) + " ";
                 }
                 st += "\r\n";
             }
             return st;
         }
 
-        public void bellmanFord(int Diem_dau)
+        public void Floyd(int Diem_dau)
         {
 
 
@@ -166,7 +166,7 @@ namespace FordBell
             {
 
 
-                khoangcach[i] = matrantrongso[Diem_dau, i];
+                khoangcach[i] = trongSo[Diem_dau, i];
 
 
                 Truoc[i] = Diem_dau;
@@ -181,8 +181,8 @@ namespace FordBell
                 {
                     for (int v = 0; v < sodinh; v++)
                     {
-                        int tmp = khoangcach[u] + matrantrongso[u, v];
-                        if (khoangcach[v] > tmp  && tmp !=vocung )                           // THay doi dau > thành <
+                        int tmp = khoangcach[u] + trongSo[u, v];
+                        if (khoangcach[v] > tmp  && tmp !=vocung )                           
                         {
                             khoangcach[v] = tmp;
                             Truoc[v] = u;
@@ -199,10 +199,10 @@ namespace FordBell
         {
             Bitmap a = new Bitmap(anh);
             int i = Truoc[kt];
-            a = LineTo(dsve[kt], dsve[Truoc[kt]], a, matrantrongso[kt, Truoc[kt]], Color.Red);
+            a = LineTo(dsve[kt], dsve[Truoc[kt]], a, trongSo[kt, Truoc[kt]], Color.Red);
             while (i != bd)
             {
-                a = LineTo(dsve[i], new PointF(dsve[Truoc[i]].X, dsve[Truoc[i]].Y), a, matrantrongso[i , Truoc[i]], Color.Red);
+                a = LineTo(dsve[i], new PointF(dsve[Truoc[i]].X, dsve[Truoc[i]].Y), a, trongSo[i , Truoc[i]], Color.Red);
                 i = Truoc[i];
             }
             return a;
@@ -211,7 +211,7 @@ namespace FordBell
         {
             Bitmap a = new Bitmap(anh);
 
-            bellmanFord(bd);
+            Floyd(bd);
             if (khoangcach[kt]==vocung)
             {
                 return  "Không có đường đi từ " + (bd+1) + " đến " + (kt+1);
@@ -255,7 +255,7 @@ namespace FordBell
             {
                 for (int j = 0; j < sodinh; j++)
                 {
-                    if (matrantrongso[i, j] != matrantrongso[j, i])
+                    if (trongSo[i, j] != trongSo[j, i])
                     {
                         return false;
                     }
@@ -323,10 +323,10 @@ namespace FordBell
             {
                 for (int j = 1; j <= sodinh; j++)
                 {
-                    if (matrantrongso[i - 1, j - 1] != vocung)
+                    if (trongSo[i - 1, j - 1] != vocung)
                     {
                         
-                            a = LineTo(dsve[i - 1], dsve[j - 1], a, matrantrongso[i - 1, j - 1], Color.Green);
+                            a = LineTo(dsve[i - 1], dsve[j - 1], a, trongSo[i - 1, j - 1], Color.Green);
                         
 
 
@@ -416,7 +416,7 @@ namespace FordBell
         }
         public int[,] ToMaTrix
         {
-            get { return matrantrongso; }
+            get { return trongSo; }
         }
         public int[] KhoangCach
         {

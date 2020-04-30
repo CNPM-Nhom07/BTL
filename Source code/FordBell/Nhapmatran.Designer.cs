@@ -1,4 +1,4 @@
-﻿namespace FordBell
+﻿namespace ployd
 {
     partial class Nhapmatran
     {
@@ -125,7 +125,7 @@
             this.dt.AllowUserToResizeRows = false;
             this.dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt.ColumnHeadersVisible = false;
-            this.dt.Location = new System.Drawing.Point(394, 120);
+            this.dt.Location = new System.Drawing.Point(453, 121);
             this.dt.Margin = new System.Windows.Forms.Padding(5);
             this.dt.MultiSelect = false;
             this.dt.Name = "dt";
@@ -150,7 +150,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(402, 95);
+            this.label1.Location = new System.Drawing.Point(449, 82);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 20);
@@ -264,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 540);
+            this.ClientSize = new System.Drawing.Size(943, 540);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);

@@ -1,4 +1,4 @@
-﻿namespace FordBell
+﻿namespace ployd
 {
     partial class Form1
     {
@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btl_NhapFile = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.start = new System.Windows.Forms.ComboBox();
             this.end = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btl_ToanBo = new System.Windows.Forms.Button();
             this.pb = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.lưuẢnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,26 +45,31 @@
             this.thôngTinTácGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lienthong = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btl_NhapTay = new System.Windows.Forms.Button();
             this.dt = new System.Windows.Forms.DataGridView();
             this.tb = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btl_CapNhat = new System.Windows.Forms.Button();
+            this.btl_Thoat = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btl_Truoc = new System.Windows.Forms.Button();
+            this.btl_Sau = new System.Windows.Forms.Button();
+            this.btl_OK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btl_NhapFile
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(10, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Nhập từ File";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btl_NhapFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_NhapFile.Location = new System.Drawing.Point(10, 12);
+            this.btl_NhapFile.Name = "btl_NhapFile";
+            this.btl_NhapFile.Size = new System.Drawing.Size(82, 35);
+            this.btl_NhapFile.TabIndex = 3;
+            this.btl_NhapFile.Text = "Nhập từ File";
+            this.btl_NhapFile.UseVisualStyleBackColor = true;
+            this.btl_NhapFile.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
@@ -75,7 +80,7 @@
             this.start.Enabled = false;
             this.start.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start.FormattingEnabled = true;
-            this.start.Location = new System.Drawing.Point(785, 13);
+            this.start.Location = new System.Drawing.Point(702, 11);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(51, 28);
             this.start.TabIndex = 6;
@@ -85,7 +90,7 @@
             this.end.Enabled = false;
             this.end.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.end.FormattingEnabled = true;
-            this.end.Location = new System.Drawing.Point(881, 14);
+            this.end.Location = new System.Drawing.Point(807, 11);
             this.end.Name = "end";
             this.end.Size = new System.Drawing.Size(51, 28);
             this.end.TabIndex = 7;
@@ -94,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(753, 17);
+            this.label1.Location = new System.Drawing.Point(667, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 8;
@@ -104,23 +109,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(839, 16);
+            this.label2.Location = new System.Drawing.Point(759, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Đến";
             // 
-            // button2
+            // btl_ToanBo
             // 
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(602, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 30);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Tìm Đường đi ngắn nhất";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btl_ToanBo.Enabled = false;
+            this.btl_ToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_ToanBo.Location = new System.Drawing.Point(213, 498);
+            this.btl_ToanBo.Name = "btl_ToanBo";
+            this.btl_ToanBo.Size = new System.Drawing.Size(76, 30);
+            this.btl_ToanBo.TabIndex = 10;
+            this.btl_ToanBo.Text = "Toàn bộ";
+            this.btl_ToanBo.UseVisualStyleBackColor = true;
+            this.btl_ToanBo.Click += new System.EventHandler(this.button2_Click);
             // 
             // pb
             // 
@@ -178,16 +183,16 @@
             this.lienthong.Size = new System.Drawing.Size(0, 31);
             this.lienthong.TabIndex = 11;
             // 
-            // button3
+            // btl_NhapTay
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(92, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Nhập bằng tay";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btl_NhapTay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_NhapTay.Location = new System.Drawing.Point(92, 12);
+            this.btl_NhapTay.Name = "btl_NhapTay";
+            this.btl_NhapTay.Size = new System.Drawing.Size(85, 35);
+            this.btl_NhapTay.TabIndex = 13;
+            this.btl_NhapTay.Text = "Nhập bằng tay";
+            this.btl_NhapTay.UseVisualStyleBackColor = true;
+            this.btl_NhapTay.Click += new System.EventHandler(this.button3_Click);
             // 
             // dt
             // 
@@ -224,48 +229,111 @@
             this.tb.Size = new System.Drawing.Size(0, 25);
             this.tb.TabIndex = 15;
             // 
-            // button4
+            // btl_CapNhat
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(177, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 35);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Cập nhật";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btl_CapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_CapNhat.Location = new System.Drawing.Point(207, 12);
+            this.btl_CapNhat.Name = "btl_CapNhat";
+            this.btl_CapNhat.Size = new System.Drawing.Size(82, 35);
+            this.btl_CapNhat.TabIndex = 16;
+            this.btl_CapNhat.Text = "Cập nhật";
+            this.btl_CapNhat.UseVisualStyleBackColor = true;
+            this.btl_CapNhat.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btl_Thoat
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(261, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 35);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btl_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_Thoat.ForeColor = System.Drawing.Color.Red;
+            this.btl_Thoat.Location = new System.Drawing.Point(854, 501);
+            this.btl_Thoat.Name = "btl_Thoat";
+            this.btl_Thoat.Size = new System.Drawing.Size(82, 35);
+            this.btl_Thoat.TabIndex = 18;
+            this.btl_Thoat.Text = "Thoát";
+            this.btl_Thoat.UseVisualStyleBackColor = true;
+            this.btl_Thoat.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownHeight = 120;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.ItemHeight = 13;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Dijkstra",
+            "Bellman-Ford",
+            "Floyd-Warshall",
+            "A*"});
+            this.comboBox1.Location = new System.Drawing.Point(438, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label3.Location = new System.Drawing.Point(351, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 16);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Giải Thuật";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btl_Truoc
+            // 
+            this.btl_Truoc.Location = new System.Drawing.Point(29, 497);
+            this.btl_Truoc.Name = "btl_Truoc";
+            this.btl_Truoc.Size = new System.Drawing.Size(63, 31);
+            this.btl_Truoc.TabIndex = 21;
+            this.btl_Truoc.Text = "Trước";
+            this.btl_Truoc.UseVisualStyleBackColor = true;
+            // 
+            // btl_Sau
+            // 
+            this.btl_Sau.Location = new System.Drawing.Point(98, 497);
+            this.btl_Sau.Name = "btl_Sau";
+            this.btl_Sau.Size = new System.Drawing.Size(63, 31);
+            this.btl_Sau.TabIndex = 22;
+            this.btl_Sau.Text = "Sau";
+            this.btl_Sau.UseVisualStyleBackColor = true;
+            // 
+            // btl_OK
+            // 
+            this.btl_OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btl_OK.Location = new System.Drawing.Point(873, 11);
+            this.btl_OK.Name = "btl_OK";
+            this.btl_OK.Size = new System.Drawing.Size(63, 28);
+            this.btl_OK.TabIndex = 23;
+            this.btl_OK.Text = "OK";
+            this.btl_OK.UseVisualStyleBackColor = true;
+            this.btl_OK.Click += new System.EventHandler(this.btl_OK_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 364);
+            this.ClientSize = new System.Drawing.Size(948, 539);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.ControlBox = false;
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btl_OK);
+            this.Controls.Add(this.btl_Sau);
+            this.Controls.Add(this.btl_Truoc);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btl_Thoat);
             this.Controls.Add(this.tb);
             this.Controls.Add(this.lienthong);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btl_CapNhat);
             this.Controls.Add(this.dt);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btl_ToanBo);
+            this.Controls.Add(this.btl_NhapTay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.end);
             this.Controls.Add(this.start);
             this.Controls.Add(this.pb);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btl_NhapFile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -284,26 +352,31 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btl_NhapFile;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox start;
         private System.Windows.Forms.ComboBox end;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btl_ToanBo;
         private System.Windows.Forms.PictureBox pb;
         private System.Windows.Forms.Label lienthong;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem lưuẢnhToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btl_NhapTay;
         private System.Windows.Forms.DataGridView dt;
         private System.Windows.Forms.Label tb;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btl_CapNhat;
         private System.Windows.Forms.ToolStripMenuItem sửaDữLiệuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinTácGiảToolStripMenuItem;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btl_Thoat;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btl_Truoc;
+        private System.Windows.Forms.Button btl_Sau;
+        private System.Windows.Forms.Button btl_OK;
     }
 }
 
