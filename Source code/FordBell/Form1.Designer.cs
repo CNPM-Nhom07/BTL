@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btl_NhapFile = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.start = new System.Windows.Forms.ComboBox();
@@ -202,14 +202,14 @@
             this.dt.AllowUserToResizeRows = false;
             this.dt.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dt.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt.DefaultCellStyle = dataGridViewCellStyle1;
             this.dt.GridColor = System.Drawing.SystemColors.Control;
             this.dt.Location = new System.Drawing.Point(791, 188);
             this.dt.Name = "dt";
@@ -289,6 +289,7 @@
             this.btl_Truoc.TabIndex = 21;
             this.btl_Truoc.Text = "Trước";
             this.btl_Truoc.UseVisualStyleBackColor = true;
+            this.btl_Truoc.Click += new System.EventHandler(this.btl_Truoc_Click);
             // 
             // btl_Sau
             // 
@@ -298,6 +299,7 @@
             this.btl_Sau.TabIndex = 22;
             this.btl_Sau.Text = "Sau";
             this.btl_Sau.UseVisualStyleBackColor = true;
+            this.btl_Sau.Click += new System.EventHandler(this.btl_Sau_Click);
             // 
             // btl_OK
             // 
@@ -314,7 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 539);
+            this.ClientSize = new System.Drawing.Size(948, 545);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.ControlBox = false;
             this.Controls.Add(this.btl_OK);

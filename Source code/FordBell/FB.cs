@@ -18,7 +18,7 @@ namespace ployd
         private int[,] trongSo;
         private int[] Truoc;
         private int[] khoangcach;
-        private int[] DuongDi;
+        public int[] DuongDi;
         #endregion
         #region Contrustion
         public FB(string filename)
@@ -207,11 +207,28 @@ namespace ployd
             }
             return a;
         }
+        public void TimDuong(int bd, int kt)
+        {
+            int i, j = 0;
+            DuongDi[j] = kt + 1;
+            i = Truoc[kt];
+            while (i != bd)
+            {
+                DuongDi[++j] = i + 1;
+
+
+                i = Truoc[i];
+
+
+            }
+            DuongDi[j + 1] = bd + 1;
+
+        }
         public string XuaKQ(int bd, int kt, Image anh)
         {
             Bitmap a = new Bitmap(anh);
 
-            Floyd(bd);
+           // Floyd(bd);
             if (khoangcach[kt]==vocung)
             {
                 return  "Không có đường đi từ " + (bd+1) + " đến " + (kt+1);
