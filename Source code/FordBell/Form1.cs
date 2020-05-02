@@ -77,9 +77,13 @@ namespace ployd
                 MessageBox.Show("Đồ thị nhập vào không hợp lê!!! \r\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
-
+            lab_HienThi.Text = "";
             this.Height = 578;
-
+            cb_GiaiThuat.Enabled = false;
+            btl_CapNhat.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Truoc.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Sau.Enabled = contextMenuStrip1.Enabled = false;
+            btl_OK.Enabled = contextMenuStrip1.Enabled = false;
 
             btl_CapNhat.Enabled = contextMenuStrip1.Enabled = true;
 
@@ -141,7 +145,7 @@ namespace ployd
             {
                 if (start.Text != end.Text)
                 {
-                    pb.Image = a.Paint();
+                 //   pb.Image = a.Paint();
 
 
                     string st = a.XuaKQ(int.Parse(start.Text) - 1, int.Parse(end.Text) - 1, pb.Image);
@@ -158,7 +162,7 @@ namespace ployd
                         st += "Độ dài: " + a.KhoangCach[Convert.ToInt32(end.Text) - 1].ToString();
                         pb.Image = a.DuongDiPic(int.Parse(start.Text) - 1, int.Parse(end.Text) - 1, pb.Image);
                     }
-                    tb.Text = st;
+                   // tb.Text = st;
                 }
                 else
                 {
@@ -175,6 +179,13 @@ namespace ployd
             vt = n-2;           // Vi tri de duyet tung step
             btl_Sau.Enabled = false;
             btl_Truoc.Enabled = true;
+            string s = "";
+            for (int i = 0; i <n-1; i++)
+            {
+                s += dd[i] + " -> ";
+            }
+            s += dd[n-1];
+            lab_HienThi1.Text = s;
 
         }
 
@@ -196,6 +207,12 @@ namespace ployd
 
         private void button3_Click(object sender, EventArgs e)
         {
+            lab_HienThi.Text = "";
+            cb_GiaiThuat.Enabled = false;
+            btl_CapNhat.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Truoc.Enabled = contextMenuStrip1.Enabled = false;
+            btl_Sau.Enabled = contextMenuStrip1.Enabled = false;
+            btl_OK.Enabled = contextMenuStrip1.Enabled = false;
             this.Width = 953;
             this.Text = "Demo Tìm đường đi ngắn nhất";
             btl_Thoat.Location = new Point(854, 503);
@@ -306,6 +323,8 @@ namespace ployd
                 MessageBox.Show("Vui lòng chọn thuật toán !!!");
             else
             {
+                pb.Image = a.Paint();
+
                 btl_Sau.Enabled = contextMenuStrip1.Enabled = true;
                 btl_ToanBo.Enabled = contextMenuStrip1.Enabled = true;
                 int bd = int.Parse(start.Text) - 1;
@@ -314,9 +333,10 @@ namespace ployd
                 a.TimDuong(bd, kt);
                 int[] tmp = a.DuongDi;
                 n = 0;
-                string s = "";
+                vt = 0;
+                lab_HienThi1.Text = "";
                 for (int i = tmp.Length - 1; i >= 0; i--)
-                    if (Convert.ToInt32(tmp[i]) != 0) { dd[n++] = Convert.ToInt32(tmp[i]); s += tmp[i] + " "; }
+                    if (Convert.ToInt32(tmp[i]) != 0) dd[n++] = Convert.ToInt32(tmp[i]);
             }
         }
 
@@ -332,9 +352,16 @@ namespace ployd
             PointF p1 = a.ViTriVe[dd[vt] - 1];
             PointF p2 = a.ViTriVe[dd[vt+1] - 1];
              pb.Image = a.LineTo(p1, p2, pb.Image, ts, Color.Red);
+            btl_Truoc.Enabled = true;
+            string s = "";
+            for ( int i=0; i<=vt; i++)
+            {
+                s += dd[i] + " -> ";
+            }
+            s += dd[vt+1];
+            lab_HienThi1.Text = s;
             vt++;
             if (vt > n - 2) vt = n - 2;
-            btl_Truoc.Enabled = true;
         }
 
         private void btl_Truoc_Click(object sender, EventArgs e)
@@ -344,9 +371,19 @@ namespace ployd
             PointF p1 = a.ViTriVe[dd[vt] - 1];
             PointF p2 = a.ViTriVe[dd[vt+1] - 1];
             pb.Image = a.LineTo(p1, p2, pb.Image, ts, Color.Green);
+            btl_Sau.Enabled = true;
+            string s = "";
+            for (int i = 0; i < vt; i++)
+            {
+                s += dd[i] + " -> ";
+            }
+            s += dd[vt];
+            if (vt == 0)
+                lab_HienThi1.Text = "";
+            else 
+            lab_HienThi1.Text = s;
             vt--;
             if (vt < 0) vt = 0;
-            btl_Sau.Enabled = true;
         }
     }
 }

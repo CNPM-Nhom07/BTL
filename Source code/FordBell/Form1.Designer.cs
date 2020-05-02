@@ -55,6 +55,10 @@
             this.btl_Truoc = new System.Windows.Forms.Button();
             this.btl_Sau = new System.Windows.Forms.Button();
             this.btl_OK = new System.Windows.Forms.Button();
+            this.lab_TieuDe = new System.Windows.Forms.Label();
+            this.lab_HienThi = new System.Windows.Forms.Label();
+            this.lab_dd = new System.Windows.Forms.Label();
+            this.lab_HienThi1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt)).BeginInit();
@@ -312,6 +316,42 @@
             this.btl_OK.UseVisualStyleBackColor = true;
             this.btl_OK.Click += new System.EventHandler(this.btl_OK_Click);
             // 
+            // lab_TieuDe
+            // 
+            this.lab_TieuDe.AutoSize = true;
+            this.lab_TieuDe.Location = new System.Drawing.Point(458, 501);
+            this.lab_TieuDe.Name = "lab_TieuDe";
+            this.lab_TieuDe.Size = new System.Drawing.Size(0, 13);
+            this.lab_TieuDe.TabIndex = 24;
+            // 
+            // lab_HienThi
+            // 
+            this.lab_HienThi.AutoSize = true;
+            this.lab_HienThi.Location = new System.Drawing.Point(580, 501);
+            this.lab_HienThi.Name = "lab_HienThi";
+            this.lab_HienThi.Size = new System.Drawing.Size(0, 13);
+            this.lab_HienThi.TabIndex = 25;
+            // 
+            // lab_dd
+            // 
+            this.lab_dd.AutoSize = true;
+            this.lab_dd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_dd.Location = new System.Drawing.Point(381, 503);
+            this.lab_dd.Name = "lab_dd";
+            this.lab_dd.Size = new System.Drawing.Size(91, 20);
+            this.lab_dd.TabIndex = 26;
+            this.lab_dd.Text = "Đường đi :";
+            // 
+            // lab_HienThi1
+            // 
+            this.lab_HienThi1.AutoSize = true;
+            this.lab_HienThi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_HienThi1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lab_HienThi1.Location = new System.Drawing.Point(478, 504);
+            this.lab_HienThi1.Name = "lab_HienThi1";
+            this.lab_HienThi1.Size = new System.Drawing.Size(0, 16);
+            this.lab_HienThi1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +359,10 @@
             this.ClientSize = new System.Drawing.Size(948, 545);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.ControlBox = false;
+            this.Controls.Add(this.lab_HienThi1);
+            this.Controls.Add(this.lab_dd);
+            this.Controls.Add(this.lab_HienThi);
+            this.Controls.Add(this.lab_TieuDe);
             this.Controls.Add(this.btl_OK);
             this.Controls.Add(this.btl_Sau);
             this.Controls.Add(this.btl_Truoc);
@@ -380,6 +424,10 @@
         private System.Windows.Forms.Button btl_Truoc;
         private System.Windows.Forms.Button btl_Sau;
         private System.Windows.Forms.Button btl_OK;
+        private System.Windows.Forms.Label lab_TieuDe;
+        private System.Windows.Forms.Label lab_HienThi;
+        private System.Windows.Forms.Label lab_dd;
+        private System.Windows.Forms.Label lab_HienThi1;
     }
 }
 
