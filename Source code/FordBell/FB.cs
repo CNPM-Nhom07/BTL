@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
@@ -161,7 +162,6 @@ namespace ployd
         public void Floyd(int Diem_dau)
         {
 
-
             for (int i = 0; i < sodinh; i++)
             {
 
@@ -183,6 +183,92 @@ namespace ployd
                     {
                         int tmp = khoangcach[u] + trongSo[u, v];
                         if (khoangcach[v] > tmp  && tmp !=vocung )                           
+                        {
+                            khoangcach[v] = tmp;
+                            Truoc[v] = u;
+
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+        public void Dijkstra(int bd, int kt)
+        {
+            int[] S = new int[11];
+            // dat vo cung cho tat ca cap canh khong noi voi nhau
+            for (int e = 0; e < sodinh; e++)
+            {
+                for (int j = 0; j < sodinh; j++)
+                {
+                    if (e != j && trongSo[e,j] == 0)
+                        trongSo[e,j] = vocung;
+                }
+            }
+            for (int e = 0; e < sodinh; e++)
+            {
+                KhoangCach[e] = vocung;                   // khoi tao do dai tu a toi moi dinh la vo cung
+                S[e] = 0;   
+                Truoc[e] = bd;                       // dat diem bat dau cua moi diem la a
+            }
+            int i;
+            while (S[kt] == 0)
+            {                 // trong khi diem cuoi chua duoc xet
+                for ( i = 0; i < sodinh; i++)          // tim 1 vi tri ma khong phai la vo cung
+                    if (S[i] == 0 && khoangcach[i] < vocung)
+                        break;
+
+                // i >=n tuc la duyet het cac dinh ma khong the tim thay dinh b -> thoat
+                if (i >= sodinh )
+                {
+                    break;
+                }
+
+                for (int j = 0; j < sodinh; j++)
+                {    // tim diem co vi tri ma do dai la min
+                    if ( S[j] == 0  && khoangcach[i] > khoangcach[j])
+                    {
+                        i = j;
+                    }
+                }
+
+                S[i] = 1;                       // cho i vao danh sach xet roi
+
+                for (int j = 0; j < sodinh; j++)
+                {    // tinh lai do dai cua cac diem chua xet
+                    if (S[j] == 0  && khoangcach[i] + trongSo[i,j] < khoangcach[j])
+                    {
+                        khoangcach[j] = khoangcach[i] + trongSo[i,j];      // thay doi len
+                        Truoc[j] = i;                       // danh dau diem truoc no
+                    }
+                }
+            }
+
+
+        }
+        public void Bell_forman (int bd)
+        {
+            for (int i = 0; i < sodinh; i++)
+            {
+
+
+                khoangcach[i] = trongSo[bd, i];
+
+
+                Truoc[i] = bd;
+
+            }
+          for (int i = 0; i < sodinh - 2; i++)
+            {
+
+                for (int u = 0; u < sodinh; u++)
+                {
+                    for (int v = 0; v < sodinh; v++)
+                    {
+                        int tmp = khoangcach[u] + trongSo[u, v];
+                        if (khoangcach[v] > tmp && tmp != vocung)
                         {
                             khoangcach[v] = tmp;
                             Truoc[v] = u;

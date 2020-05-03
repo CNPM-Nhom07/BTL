@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btl_NhapFile = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.start = new System.Windows.Forms.ComboBox();
@@ -59,6 +59,8 @@
             this.lab_HienThi = new System.Windows.Forms.Label();
             this.lab_dd = new System.Windows.Forms.Label();
             this.lab_HienThi1 = new System.Windows.Forms.Label();
+            this.lab_TS = new System.Windows.Forms.Label();
+            this.lab_HTTS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt)).BeginInit();
@@ -123,7 +125,7 @@
             // 
             this.btl_ToanBo.Enabled = false;
             this.btl_ToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btl_ToanBo.Location = new System.Drawing.Point(213, 498);
+            this.btl_ToanBo.Location = new System.Drawing.Point(178, 498);
             this.btl_ToanBo.Name = "btl_ToanBo";
             this.btl_ToanBo.Size = new System.Drawing.Size(76, 30);
             this.btl_ToanBo.TabIndex = 10;
@@ -206,14 +208,14 @@
             this.dt.AllowUserToResizeRows = false;
             this.dt.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dt.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt.DefaultCellStyle = dataGridViewCellStyle3;
             this.dt.GridColor = System.Drawing.SystemColors.Control;
             this.dt.Location = new System.Drawing.Point(791, 188);
             this.dt.Name = "dt";
@@ -336,21 +338,43 @@
             // 
             this.lab_dd.AutoSize = true;
             this.lab_dd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_dd.Location = new System.Drawing.Point(381, 503);
+            this.lab_dd.Location = new System.Drawing.Point(283, 502);
             this.lab_dd.Name = "lab_dd";
             this.lab_dd.Size = new System.Drawing.Size(91, 20);
             this.lab_dd.TabIndex = 26;
             this.lab_dd.Text = "Đường đi :";
+            this.lab_dd.Click += new System.EventHandler(this.lab_dd_Click);
             // 
             // lab_HienThi1
             // 
             this.lab_HienThi1.AutoSize = true;
             this.lab_HienThi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_HienThi1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lab_HienThi1.Location = new System.Drawing.Point(478, 504);
+            this.lab_HienThi1.Location = new System.Drawing.Point(380, 504);
             this.lab_HienThi1.Name = "lab_HienThi1";
             this.lab_HienThi1.Size = new System.Drawing.Size(0, 16);
             this.lab_HienThi1.TabIndex = 27;
+            // 
+            // lab_TS
+            // 
+            this.lab_TS.AutoSize = true;
+            this.lab_TS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_TS.Location = new System.Drawing.Point(654, 502);
+            this.lab_TS.Name = "lab_TS";
+            this.lab_TS.Size = new System.Drawing.Size(82, 18);
+            this.lab_TS.TabIndex = 28;
+            this.lab_TS.Text = "Tổng TS: ";
+            // 
+            // lab_HTTS
+            // 
+            this.lab_HTTS.AutoSize = true;
+            this.lab_HTTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_HTTS.ForeColor = System.Drawing.Color.Green;
+            this.lab_HTTS.Location = new System.Drawing.Point(742, 504);
+            this.lab_HTTS.Name = "lab_HTTS";
+            this.lab_HTTS.Size = new System.Drawing.Size(12, 16);
+            this.lab_HTTS.TabIndex = 29;
+            this.lab_HTTS.Text = " ";
             // 
             // Form1
             // 
@@ -359,6 +383,8 @@
             this.ClientSize = new System.Drawing.Size(948, 545);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.ControlBox = false;
+            this.Controls.Add(this.lab_HTTS);
+            this.Controls.Add(this.lab_TS);
             this.Controls.Add(this.lab_HienThi1);
             this.Controls.Add(this.lab_dd);
             this.Controls.Add(this.lab_HienThi);
@@ -428,6 +454,8 @@
         private System.Windows.Forms.Label lab_HienThi;
         private System.Windows.Forms.Label lab_dd;
         private System.Windows.Forms.Label lab_HienThi1;
+        private System.Windows.Forms.Label lab_TS;
+        private System.Windows.Forms.Label lab_HTTS;
     }
 }
 

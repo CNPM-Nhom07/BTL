@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -317,27 +318,42 @@ namespace ployd
 
         private void btl_OK_Click(object sender, EventArgs e)
         {
-            //Lấy giá trị qua thuộc tính SelectedItem
+            long time = new long();
+            Stopwatch stopwatch = Stopwatch.StartNew();
             var item = this.cb_GiaiThuat.GetItemText(this.cb_GiaiThuat.SelectedItem);
             if (item == "")
+            {
+                int bd = int.Parse(start.Text) - 1;
+                int kt = int.Parse(end.Text) - 1;
                 MessageBox.Show("Vui lòng chọn thuật toán !!!");
+                a.Dijkstra(bd, kt);
+                a.Bell_forman(bd);
+            }
             else
             {
                 pb.Image = a.Paint();
-
+                btl_Truoc.Enabled = false;
                 btl_Sau.Enabled = contextMenuStrip1.Enabled = true;
                 btl_ToanBo.Enabled = contextMenuStrip1.Enabled = true;
                 int bd = int.Parse(start.Text) - 1;
                 int kt = int.Parse(end.Text) - 1;
                 a.Floyd(bd);
+                //a.Dijkstra(bd, kt);
                 a.TimDuong(bd, kt);
                 int[] tmp = a.DuongDi;
                 n = 0;
                 vt = 0;
+                int ts = 0;
                 lab_HienThi1.Text = "";
                 for (int i = tmp.Length - 1; i >= 0; i--)
                     if (Convert.ToInt32(tmp[i]) != 0) dd[n++] = Convert.ToInt32(tmp[i]);
+                for (int i = 0; i < n - 1; i++)
+                    ts += a.ToMaTrix[dd[i] - 1, dd[i + 1] - 1];
+                lab_HTTS.Text = ts.ToString();
             }
+            stopwatch.Stop();
+            time = stopwatch.ElapsedMilliseconds;
+            // MessageBox.Show("Thoi gian thuc thi: "+time.ToString()+"ms");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -348,6 +364,7 @@ namespace ployd
         private void btl_Sau_Click(object sender, EventArgs e)
         {
             if (vt == n - 2) { btl_Sau.Enabled = false;  }
+            //int tongTS = 0;
             int ts = a.ToMaTrix[dd[vt]-1, dd[vt+1]-1];
             PointF p1 = a.ViTriVe[dd[vt] - 1];
             PointF p2 = a.ViTriVe[dd[vt+1] - 1];
@@ -357,6 +374,7 @@ namespace ployd
             for ( int i=0; i<=vt; i++)
             {
                 s += dd[i] + " -> ";
+              //  tongTS += 
             }
             s += dd[vt+1];
             lab_HienThi1.Text = s;
@@ -384,6 +402,11 @@ namespace ployd
             lab_HienThi1.Text = s;
             vt--;
             if (vt < 0) vt = 0;
+        }
+
+        private void lab_dd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
